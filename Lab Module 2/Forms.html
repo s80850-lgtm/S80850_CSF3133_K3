@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creating Forms</title>
+</head>
+<body>
+
+    <h2>2.4 Creating Forms</h2>
+
+    <p>
+        Forms are an essential part of any interactive webpage,
+        allowing users to input data.
+    </p>
+
+    <h3>2.4.1 Basic Form Elements</h3>
+
+    <p>
+        1. Create a form with text fields, radio buttons,
+        and a submit button.
+    </p>
+
+    <h2>Registration Form</h2>
+
+    <form action="submit_form.php" method="post">
+
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="firstname">
+        <br><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lastname">
+        <br><br>
+
+        <label for="gender">Gender:</label><br>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <hr>
+
+    <h3>2.4.2 Other Form Elements</h3>
+
+    <p>
+        1. Include other types of inputs like checkboxes
+        and dropdowns.
+    </p>
+
+    <form action="submit_form.php" method="post">
+
+        <label for="hobby1">Select your hobbies:</label><br>
+
+        <input type="checkbox" id="hobby1" name="hobby1"
+        value="Reading">
+        <label for="hobby1">Reading</label><br>
+
+        <input type="checkbox" id="hobby2" name="hobby2"
+        value="Gaming">
+        <label for="hobby2">Gaming</label><br><br>
+
+        <label for="country">Choose a country:</label><br>
+
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
