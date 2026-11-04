@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+    </div>
+
+    <!-- Main content section -->
+    <div id="content">
+
+        <h2>Book Your Ticket</h2>
+
+        <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+
+        <!-- Ticket booking form -->
+        <form action="booking.php"
+              oninput="
+              total.value = Number(adult.value) + Number(child.value);
+              price.value = Number(adult.value) * 12 + Number(child.value) * 8;
+              ">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name" required autofocus>
+            <br>
+            <br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+            <br>
+            <br>
+
+            <!-- New section: Phone number input -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Enter your phone number" required>
+            <br>
+            <br>
+
+            <label for="date">Show date:</label>
+            <input type="date" id="date" name="date" required>
+            <br>
+            <br>
+            <br>
+
+            <!-- New section: Show time input -->
+            <label for="time">Show time:</label>
+            <input type="time" id="time" name="time" required>
+            <br>
+            <br>
+
+            <label for="movie">Movie:</label>
+            <input id="movie" name="movie" list="movies" required>
+            <br>
+
+            <!-- Movie suggestions -->
+            <datalist id="movies">
+                <option value="Inside Out 2"></option>
+                <option value="SPIDER-MAN: Brand New Day"></option>
+                <option value="Toy Story 5"></option>
+            </datalist>
+            <br>
+            <br>
+
+            <label for="adult">Adult tickets:</label>
+            <input type="number" id="adult" name="adult"
+                   value="0" min="0" required>
+            <br>
+            <br>
+
+            <label for="child">Child tickets:</label>
+            <input type="number" id="child" name="child"
+                   value="0" min="0" required>
+            <br>
+            <br>
+
+            <label for="rating">Rate our service:</label>
+            <input type="range" id="rating" name="rating"
+                   min="1" max="5" value="3">
+            <br>
+            <br>
+
+            <!-- Ticket quantity output -->
+            Total tickets:
+            <output name="total" for="adult child">0</output>
+            <br>
+            <br>
+
+            <!-- New section: Total ticket price -->
+            Total price (RM):
+            <output name="price" for="adult child">0</output>
+            <br>
+            <br>
+
+            <input type="submit" value="Book Now">
+
+        </form>
+    </div>
+
+    <!-- New section: Sidebar showing available movies -->
+    <div id="sidebar">
+
+        <h2>Now Showing</h2>
+
+        <ul>
+            <li>
+                <strong>Inside Out 2</strong>
+                <span> (PG)</span>
+                <a href="https://youtu.be/LEjhY15eCx0?si=B5jycLYVjOB3hPhC">
+                    Watch Trailer
+                </a>
+            </li>
+
+            <li>
+                <strong>SPIDER-MAN: Brand New Day</strong>
+                <span> (PG-13)</span>
+                <a href="https://youtu.be/62bIsvRcPv0?si=JJpIu2eQOWqQJ2qR">
+                    Watch Trailer
+                </a>
+            </li>
+
+            <li>
+                <strong>Toy Story 5</strong>
+                <span> (PG)</span>
+                <a href="https://youtu.be/c51ND9Hdbw0?si=cR6XkJ6vQM3weERD">
+                    Watch Trailer
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- Footer section -->
+    <div id="footer">
+        <p>e-Ticket&reg; &ndash; Campus Cinema &lt; RM10 every Tuesday &amp;copy; 2026 CineKampus. All rights reserved.</p>
+    </div>
+
+    </body>
+    </html>

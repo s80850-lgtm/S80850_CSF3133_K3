@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CampusBake Online Order</title>
+</head>
+<body>
+    <!-- 1. Header Section -->
+    <div id="header">
+        <h1>CampusBake&reg; 
+            <span>Freshly Baked, Happily Served!</span>
+        </h1>
+    </div>
+
+    <!-- 2. Navigation Section -->
+    <div id="nav">
+        <a href="#home">Home</a> |
+        <a href="#price-list">Price List</a> |
+        <a href="#order-form">Order Now</a>
+    </div>
+
+    <!-- 3. Content Section -->
+    <div id="content">
+
+        <h2 id="home">Welcome to CampusBake!</h2>
+
+        <p>
+            Welcome to <strong>CampusBake</strong>, your favourite campus bakery.
+            Enjoy our <em>freshly baked</em> cupcakes and cakes.
+            We provide <span>delicious treats</span> at affordable prices.
+            <a href="#order-form">Place your order here!</a>
+        </p>
+
+        <!-- 4. Order Form Section -->
+        <div id="order-form">
+
+            <h2>Online Order Form</h2>
+
+            <form oninput="total.value = (Number(cupcakes.value) * 3) + (Number(cakeSlices.value) * 5)">
+
+                <p>
+                    Customer Name:
+                    <input type="text" name="customerName"
+                    placeholder="Enter your name" required autofocus>
+                </p>
+
+                <p>
+                    Phone Number:
+                    <input type="tel" name="phone" required>
+                </p>
+
+                <p>
+                    E-mail:
+                    <input type="email" name="email" required>
+                </p>
+
+                <p>
+                    Pick-up Date:
+                    <input type="date" name="pickupDate">
+                </p>
+
+                <p>
+                    Pick-up Time:
+                    <input type="time" name="pickupTime">
+                </p>
+
+                <p>
+                    Flavour:
+                    <input type="text" name="flavour" list="flavours">
+
+                    <datalist id="flavours">
+                        <option value="Chocolate">
+                        <option value="Vanilla">
+                        <option value="Red Velvet">
+                        <option value="Strawberry">
+                    </datalist>
+                </p>
+
+                <p>
+                    Icing Colour:
+                    <input type="color" name="icingColour">
+                </p>
+
+                <p>
+                    Sweetness Level:
+                    <input type="range" name="sweetness"
+                    min="1" max="5" step="1">
+                </p>
+
+                <!-- 5. Price Calculator Section -->
+                <h3>Price Calculator</h3>
+
+                <p>
+                    Cupcakes (RM 3.00 each):
+                    <input type="number" name="cupcakes"
+                    min="0" value="0">
+                </p>
+
+                <p>
+                    Cake Slices (RM 5.00 each):
+                    <input type="number" name="cakeSlices"
+                    min="0" value="0">
+                </p>
+
+                <p>
+                    Total Price: RM
+                    <output name="total" for="cupcakes cakeSlices">0</output>
+                </p>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Order</button>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- 6. Sidebar Section -->
+    <div id="sidebar">
+
+        <h2 id="price-list">Price List</h2>
+
+        <ul>
+            <li>Chocolate Cupcake - RM 3.00</li>
+            <li>Vanilla Cupcake - RM 3.00</li>
+            <li>Red Velvet Cake Slice - RM 5.00</li>
+            <li>Strawberry Cake Slice - RM 5.00</li>
+        </ul>
+
+        <p>Orders &gt; 10 pieces get a free drink!</p>
+
+    </div>
+
+    <!-- 7. Footer Section -->
+    <div id="footer">
+
+        <p>&copy; 2026 CampusBake&reg;. All rights reserved.</p>
+
+        <p>Thank you&nbsp;for supporting our bakery!</p>
+
+    </div>

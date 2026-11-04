@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Output Element</title>
+</head>
+
+<body>
+
+    <h1>HTML5 Output Element</h1>
+
+    <form oninput="z.value = parseInt(x.value) + parseInt(y.value)">
+
+        <input id="x"
+               type="range"
+               min="0"
+               max="10"
+               step="1"
+               value="0">
+
+        0
+
+        <br><br>
+
+        +
+
+        <input id="y"
+               type="number"
+               value="10">
+
+        <br><br>
+
+        =
+
+        <output name="z" for="x y">10</output>
+
+    </form>
+
+</body>
+</html>

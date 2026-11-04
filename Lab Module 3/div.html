@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using DIV to Organize Content</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #header {
+            background-color: lightblue;
+            height: 100px;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        #nav {
+            background-color: lightgray;
+            height: 50px;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        #content {
+            background-color: lightyellow;
+            width: 70%;
+            height: 300px;
+            float: left;
+            text-align: center;
+            padding-top: 20px;
+            box-sizing: border-box;
+        }
+
+        #sidebar {
+            background-color: lightgreen;
+            width: 30%;
+            height: 300px;
+            float: right;
+            text-align: center;
+            padding-top: 20px;
+            box-sizing: border-box;
+        }
+
+        #footer {
+            background-color: lightcoral;
+            height: 80px;
+            text-align: center;
+            padding-top: 20px;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>Header Section</h1>
+    </div>
+
+    <div id="nav">
+        <h3>Navigation Bar</h3>
+    </div>
+
+    <div id="content">
+        <h2>Main Content Area</h2>
+        <p>Welcome to my website!</p>
+        <p>This is the main content section.</p>
+    </div>
+
+    <div id="sidebar">
+        <h2>Sidebar Content</h2>
+        <p>This is the sidebar section.</p>
+    </div>
+
+    <div id="footer">
+        <p>Footer Section</p>
+    </div>
+
+</body>
+</html>
