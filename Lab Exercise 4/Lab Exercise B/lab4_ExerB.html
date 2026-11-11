@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--
+    PART 1: LIST OF ERRORS FOUND AND CORRECTED
+
+    1. Missing HTML5 DOCTYPE declaration.
+    2. Missing HTML language attribute.
+    3. Missing meta charset declaration.
+    4. Missing viewport meta tag.
+    5. Navigation list bullets were not removed.
+    6. Heading did not have overline decoration.
+    7. Menu prices were not styled in bold red.
+    8. Menu navigation link did not point to the correct section ID.
+    9. Incorrect order of CSS link states affected hover styling.
+    10. Video source and MP4 file path needed correction.
+    11. Missing external CSS stylesheet.
+    12. Missing video caption.
+    13. Missing feedback form.
+    14. Missing email address in the footer.
+    -->
+
+    <!-- HTML5 Document Information -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>e-Café Campus</title>
+
+    <!-- Link External CSS -->
+    <link rel="stylesheet" href="cafe.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER SECTION -->
+    <header id="home">
+
+        <h1>e-Café Campus</h1>
+
+        <p>
+            Fresh Coffee, Delicious Food and Great Moments.
+        </p>
+
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+
+        <ul>
+
+            <li><a href="#menu">Menu</a></li>
+
+            <li><a href="#video">Video</a></li>
+
+            <li><a href="#feedback">Feedback</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- MENU SECTION -->
+        <section id="menu">
+
+            <h2>Today's Menu</h2>
+
+            <p class="intro">
+                Freshly brewed coffee and local delights every day.
+            </p>
+
+            <!-- MENU ITEM 1 -->
+            <article class="menu-item">
+
+                <h3>Kopi Tarik</h3>
+
+                <p>
+                    Enjoy our traditional Malaysian coffee
+                    with a smooth and creamy taste.
+                </p>
+
+                <p class="price">
+
+                    <span class="old-price">RM 4.50</span>
+
+                    <span class="new-price">RM 3.50</span>
+
+                </p>
+
+            </article>
+
+            <!-- MENU ITEM 2 -->
+            <article class="menu-item">
+
+                <h3>Nasi Lemak</h3>
+
+                <p>
+                    A delicious local favourite served
+                    with fragrant coconut rice, sambal,
+                    egg and crispy anchovies.
+                </p>
+
+                <p class="price">
+
+                    <span class="old-price">RM 7.00</span>
+
+                    <span class="new-price">RM 5.00</span>
+
+                </p>
+
+            </article>
+
+            <!-- MENU ITEM 3 -->
+            <article class="menu-item">
+
+                <h3>Chocolate Latte</h3>
+
+                <p>
+                    A perfect combination of rich chocolate
+                    and freshly prepared milk.
+                </p>
+
+                <p class="price">
+
+                    <span class="old-price">RM 8.00</span>
+
+                    <span class="new-price">RM 6.00</span>
+
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- VIDEO SECTION -->
+        <section id="video">
+
+            <h2>Watch Our Story</h2>
+
+            <p>
+                Discover our café, delicious menu and
+                freshly prepared drinks.
+            </p>
+
+            <!-- HTML5 VIDEO -->
+            <figure>
+
+                <video controls width="600" height="350">
+
+                    <source src="cafe.mp4"
+                            type="video/mp4">
+
+                    Your browser does not support the video tag.
+
+                </video>
+
+                <figcaption>
+                    Figure 1: Welcome to e-Café Campus.
+                    Enjoy our delicious food and beverages.
+                </figcaption>
+
+            </figure>
+
+        </section>
+
+        <!-- FEEDBACK FORM SECTION -->
+        <section id="feedback">
+
+            <h2>Customer Feedback Form</h2>
+
+            <p class="intro">
+                We would love to know your café experience.
+                Please complete the form below.
+            </p>
+
+            <!-- CUSTOMER FEEDBACK FORM -->
+            <form class="feedback-form"
+                  action="#"
+                  method="post">
+
+
+                <!-- NAME -->
+                <label for="name">Name:</label>
+
+                <input type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Enter your name"
+                       required>
+
+                <!-- EMAIL -->
+                <label for="email">E-mail:</label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       required>
+
+                <!-- VISIT TYPE -->
+                <label>Visit Type:</label>
+
+                <div class="form-options">
+
+                    <label>
+                        <input type="radio"
+                               name="visitType"
+                               value="Dine-in"
+                               required>
+                        Dine-in
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="visitType"
+                               value="Take-away">
+                        Take-away
+                    </label>
+
+                </div>
+
+                <!-- FAVOURITE ITEMS -->
+                <label>Favourite Items:</label>
+
+                <div class="form-options">
+
+                    <label>
+                        <input type="checkbox"
+                               name="favouriteItems"
+                               value="Kopi Tarik">
+                        Kopi Tarik
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               name="favouriteItems"
+                               value="Nasi Lemak">
+                        Nasi Lemak
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               name="favouriteItems"
+                               value="Chocolate Latte">
+                        Chocolate Latte
+                    </label>
+
+                </div>
+
+                <!-- SUBMIT BUTTON -->
+                <button type="submit">
+                    Submit Feedback
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer id="contact">
+
+        <p>
+            &copy; 2026 e-Café Campus.
+            All Rights Reserved.
+        </p>
+
+        <address>
+
+            Contact us:
+
+            <a href="mailto:ecafe@campus.com">
+                ecafe@campus.com
+            </a>
+
+        </address>
+
+    </footer>
+
+</body>
+</html>

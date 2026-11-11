@@ -1,0 +1,167 @@
+{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdf6ec;
+    color: #333;
+}
+
+header {
+    background-color: #6f4e37;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #4b3621;
+    padding: 12px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a:link,
+nav a:visited {
+    display: inline-block;
+    color: white;
+    background-color: #4b3621;
+    padding: 12px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover,
+nav a:active {
+    background-color: #c49a6c;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h2 {
+    text-decoration: overline;
+}
+
+.menu-item {
+    background-color: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #777;
+    margin-right: 8px;
+}
+
+.new-price {
+    color: red;
+    font-weight: bold;
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.feedback-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.feedback-form label {
+    display: block;
+    margin-top: 12px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.feedback-form input[type="radio"],
+.feedback-form input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.feedback-form button {
+    background-color: #6f4e37;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background-color: #c49a6c;
+}
+
+footer {
+    background-color: #4b3621;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer address {
+    font-style: normal;
+}
+
+@media screen and (max-width: 600px) {
+    nav li {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .container {
+        width: 95%;
+    }
+}

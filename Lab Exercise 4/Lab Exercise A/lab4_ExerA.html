@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic HTML5 Information -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Visit Terengganu 2026</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* Internal CSS Rule 1 */
+        .hero-tagline {
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+
+        /* Internal CSS Rule 2 */
+        #seat-status {
+            color: #176b5b;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER SECTION -->
+    <header id="home">
+
+        <h1>VISIT TERENGGANU 2026</h1>
+
+        <p class="hero-tagline">
+            Discover the Beauty of Terengganu
+        </p>
+
+        <p>
+            Explore beautiful islands, amazing nature
+            and unforgettable cultural experiences.
+        </p>
+
+    </header>
+
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Promotional Video</a></li>
+            <li><a href="#trip">Trip Interest</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+
+        <!-- DESTINATIONS SECTION -->
+        <section id="destinations">
+
+            <h2>Explore Terengganu</h2>
+
+            <p class="section-intro">
+                Discover some of the most popular tourist
+                destinations in Terengganu with our special
+                promotional packages.
+            </p>
+
+
+            <!-- DESTINATION 1: PULAU REDANG -->
+            <article class="destination-card">
+
+                <h3>Pulau Redang</h3>
+
+                <p>
+                    Pulau Redang is famous for its crystal-clear
+                    water, beautiful beaches and colourful marine
+                    life. It is a perfect destination for swimming
+                    and snorkelling.
+                </p>
+
+                <p class="price">
+                    Promotion Price:
+                    <span class="old-price">RM 299</span>
+                    <span class="new-price">RM 199</span>
+                </p>
+
+            </article>
+
+
+            <!-- DESTINATION 2: TASIK KENYIR -->
+            <article class="destination-card">
+
+                <h3>Tasik Kenyir</h3>
+
+                <p>
+                    Tasik Kenyir is the largest artificial lake
+                    in Southeast Asia. Visitors can enjoy
+                    beautiful scenery, waterfalls and nature
+                    activities.
+                </p>
+
+                <p class="price">
+                    Promotion Price:
+                    <span class="old-price">RM 250</span>
+                    <span class="new-price">RM 180</span>
+                </p>
+
+            </article>
+
+
+            <!-- DESTINATION 3: PANTAI BATU BURUK -->
+            <article class="destination-card">
+
+                <h3>Pantai Batu Buruk</h3>
+
+                <p>
+                    Pantai Batu Buruk is a popular beach in
+                    Kuala Terengganu. Visitors can enjoy
+                    the sea view, local food and relaxing
+                    activities with family and friends.
+                </p>
+
+                <p class="price">
+                    Promotion Price:
+                    <span class="old-price">RM 150</span>
+                    <span class="new-price">RM 99</span>
+                </p>
+
+            </article>
+
+
+            <!-- TRIP SEAT AVAILABILITY -->
+            <div class="seat-box">
+
+                <h3>Trip Seat Availability</h3>
+
+                <p>
+                    Number of seats filled:
+                    <strong>28 / 40</strong>
+                </p>
+
+                <meter min="0" max="40" value="28">
+                    28 out of 40
+                </meter>
+
+                <p id="seat-status">
+                    70% of trip seats have been filled!
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PROMOTIONAL VIDEO SECTION -->
+        <section id="video">
+
+            <h2>Discover Terengganu</h2>
+
+            <p>
+                Watch our promotional video and discover
+                the beautiful attractions of Terengganu.
+            </p>
+
+
+            <!-- VIDEO ELEMENT -->
+            <figure>
+
+                <video width="640" height="360" controls>
+
+                    <source src="terengganu.mp4"
+                            type="video/mp4">
+
+                    Your browser does not support the video tag.
+
+                </video>
+
+                <figcaption>
+                    Explore the beautiful destinations
+                    and attractions of Terengganu.
+                </figcaption>
+
+            </figure>
+
+        </section>
+
+
+
+        <!-- TRIP INTEREST FORM SECTION -->
+        <section id="trip">
+
+            <h2>Plan Your Trip</h2>
+
+            <p>
+                Interested in visiting Terengganu?
+                Fill in the form below to let us know
+                about your travel interests.
+            </p>
+
+
+            <!-- TRIP FORM -->
+            <form class="trip-form" action="#" method="post">
+
+
+                <!-- NAME INPUT -->
+                <label for="name">Full Name:</label>
+
+                <input type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Enter your full name"
+                       required>
+
+
+                <!-- EMAIL INPUT -->
+                <label for="email">E-mail Address:</label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email address"
+                       required>
+
+
+                <!-- TRAVELLER TYPE -->
+                <label>Traveller Type:</label>
+
+                <div class="form-options">
+
+                    <label>
+                        <input type="radio"
+                               name="traveller"
+                               value="Student"
+                               required>
+                        Student
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="traveller"
+                               value="Staff">
+                        Staff
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="traveller"
+                               value="Public">
+                        Public
+                    </label>
+
+                </div>
+
+
+                <!-- TRAVEL INTERESTS -->
+                <label>Travel Interests:</label>
+
+                <div class="form-options">
+
+                    <label>
+                        <input type="checkbox"
+                               name="interests"
+                               value="Islands">
+                        Islands
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               name="interests"
+                               value="Food">
+                        Food
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               name="interests"
+                               value="Culture">
+                        Culture
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               name="interests"
+                               value="Nature">
+                        Nature
+                    </label>
+
+                </div>
+
+
+                <!-- SUBMIT BUTTON -->
+                <button type="submit">
+                    Submit Interest
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER SECTION -->
+    <footer>
+
+        <p>
+            &copy; 2026 Visit Terengganu.
+            All Rights Reserved.
+        </p>
+
+        <address>
+            Contact us:
+            <a href="mailto:visit@terengganu.com">
+                visit@terengganu.com
+            </a>
+        </address>
+
+    </footer>
+
+
+</body>
+</html>
