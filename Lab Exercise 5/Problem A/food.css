@@ -1,0 +1,148 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    background-color: #FBF7F0;
+    font-family: 'Open Sans', sans-serif;
+    color: #2C2C2C;
+}
+
+/* Header Background Image */
+header {
+    background-image: url("header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding: 80px 20px;
+}
+
+/* Header Title */
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+}
+
+/* Header Paragraph */
+header p {
+    font-size: 18px;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2C2C2C;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Navigation Hover Effect */
+nav li a:hover {
+    background-color: #111;
+}
+
+/* Active Navigation */
+nav li a.active {
+    background-color: #E67E22;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/* Content Section */
+section {
+    padding: 25px 0;
+}
+
+/* Paragraph Formatting */
+section p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+
+/* Food Table */
+#foodTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Table Cells */
+#foodTable th,
+#foodTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+/* Table Header */
+#foodTable th {
+    background-color: #E67E22;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+/* Alternating Row Colours */
+#foodTable tr:nth-child(even) {
+    background-color: #FDEBD0;
+}
+
+/* Table Hover Effect */
+#foodTable tr:hover {
+    background-color: #EFE6D8;
+}
+
+/* Align Price to the Right */
+#foodTable .price {
+    text-align: right;
+}
+
+/* Footer */
+footer {
+    background-color: #2C2C2C;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 50px 15px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav li {
+        float: none;
+    }
+
+    nav li a {
+        text-align: center;
+    }
+
+    #foodTable {
+        font-size: 12px;
+    }
+}
+
