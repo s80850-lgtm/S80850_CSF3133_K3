@@ -1,0 +1,91 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #205477;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Section Styling */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Button Styling */
+button {
+    background-color: #287caf;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #174c70;
+}
+
+/* Input Styling */
+input {
+    padding: 8px;
+    margin: 5px;
+}
+
+/* Player and Computer Choices */
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* Image Styling */
+.choices img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+/* Scoreboard Styling */
+.scoreboard {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* History Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+th {
+    background-color: #205477;
+    color: white;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    color: #555;
+}
